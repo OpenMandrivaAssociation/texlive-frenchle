@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /language/french/frenchle
+# catalog-date 2008-09-05 13:20:03 +0200
+# catalog-license lppl
+# catalog-version 5.9993
 Name:		texlive-frenchle
 Version:	5.9993
 Release:	1
@@ -50,6 +56,7 @@ distribution makes it possible).
 %doc %{_texmfdistdir}/doc/latex/frenchle/FAQ.pdf
 %doc %{_texmfdistdir}/doc/latex/frenchle/README.le
 %doc %{_texmfdistdir}/doc/latex/frenchle/frenchle.pdf
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -60,3 +67,5 @@ distribution makes it possible).
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
