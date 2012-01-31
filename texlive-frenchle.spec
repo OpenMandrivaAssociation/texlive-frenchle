@@ -1,12 +1,12 @@
-# revision 15878
+# revision 25164
 # category Package
 # catalog-ctan /language/french/frenchle
-# catalog-date 2008-09-05 13:20:03 +0200
+# catalog-date 2012-01-20 12:38:21 +0100
 # catalog-license lppl
-# catalog-version 5.9993
+# catalog-version 5.9995
 Name:		texlive-frenchle
-Version:	5.9993
-Release:	2
+Version:	5.9995
+Release:	1
 Summary:	French macros, usable stand-alone or with Babel
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/language/french/frenchle
@@ -19,15 +19,15 @@ Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
 
 %description
-This is a light (and free) version of the excellent (shareware)
-French Pro package for LaTeX, a package to typeset French
-documents according to the rules of the "Imprimerie Nationale".
-The package comprises three LaTeX files (plus documentation,
-etc.): frenchle.sty is for use in a French-only document, while
-frenchle.ldf is for use as a babel language file (utilised by
-\usepackage[frenchle]{babel}; note that babel itself no longer
-permits such usage, but the babelfr.sty package in this
-distribution makes it possible).
+This is a redistribution and repackaging of the late Bernard
+Gaulle's "light" package to typeset French documents according
+to the rules of the "Imprimerie Nationale". The package offers
+a package, two Babel language definition files (french.ldf and
+frenchle.ldf), and a package to enable the non-standard
+definition files to be loaded into an unmodified Babel. The
+user may simply use frenchle.sty if typesetting a French-only
+document, but should use Babel with the frenchle option for a
+multilingual document.
 
 %post
     %{_sbindir}/texlive.post
@@ -44,8 +44,8 @@ distribution makes it possible).
 %{_texmfdistdir}/tex/latex/frenchle/frenchle.cfg
 %{_texmfdistdir}/tex/latex/frenchle/frenchle.ldf
 %{_texmfdistdir}/tex/latex/frenchle/frenchle.sty
-%doc %{_texmfdistdir}/doc/latex/frenchle/FAQ.pdf
-%doc %{_texmfdistdir}/doc/latex/frenchle/README.le
+%doc %{_texmfdistdir}/doc/latex/frenchle/ALIRE.le
+%doc %{_texmfdistdir}/doc/latex/frenchle/README
 %doc %{_texmfdistdir}/doc/latex/frenchle/frenchle.pdf
 
 #-----------------------------------------------------------------------
