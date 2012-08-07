@@ -1,7 +1,7 @@
-# revision 25164
+# revision 26756
 # category Package
 # catalog-ctan /language/french/frenchle
-# catalog-date 2012-01-20 12:38:21 +0100
+# catalog-date 2012-05-31 00:57:47 +0200
 # catalog-license lppl
 # catalog-version 5.9995
 Name:		texlive-frenchle
@@ -46,7 +46,13 @@ multilingual document.
 %{_texmfdistdir}/tex/latex/frenchle/frenchle.sty
 %doc %{_texmfdistdir}/doc/latex/frenchle/ALIRE.le
 %doc %{_texmfdistdir}/doc/latex/frenchle/README
+%doc %{_texmfdistdir}/doc/latex/frenchle/README.le
+%doc %{_texmfdistdir}/doc/latex/frenchle/faq.pdf
 %doc %{_texmfdistdir}/doc/latex/frenchle/frenchle.pdf
+%doc %{_texmfdistdir}/doc/latex/frenchle/sources/faq.tex
+%doc %{_texmfdistdir}/doc/latex/frenchle/sources/frenchle.tex
+%doc %{_texmfdistdir}/doc/latex/frenchle/sources/myfroptn.sty
+%doc %{_texmfdistdir}/doc/latex/frenchle/sources/mymaj.sty
 
 #-----------------------------------------------------------------------
 %prep
