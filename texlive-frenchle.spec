@@ -1,12 +1,12 @@
-# revision 25164
+# revision 29803
 # category Package
 # catalog-ctan /language/french/frenchle
-# catalog-date 2012-01-20 12:38:21 +0100
+# catalog-date 2012-05-31 00:57:47 +0200
 # catalog-license lppl
 # catalog-version 5.9995
 Name:		texlive-frenchle
 Version:	5.9995
-Release:	1
+Release:	2
 Summary:	French macros, usable stand-alone or with Babel
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/language/french/frenchle
@@ -46,7 +46,13 @@ multilingual document.
 %{_texmfdistdir}/tex/latex/frenchle/frenchle.sty
 %doc %{_texmfdistdir}/doc/latex/frenchle/ALIRE.le
 %doc %{_texmfdistdir}/doc/latex/frenchle/README
+%doc %{_texmfdistdir}/doc/latex/frenchle/README.le
+%doc %{_texmfdistdir}/doc/latex/frenchle/faq.pdf
 %doc %{_texmfdistdir}/doc/latex/frenchle/frenchle.pdf
+%doc %{_texmfdistdir}/doc/latex/frenchle/sources/faq.tex
+%doc %{_texmfdistdir}/doc/latex/frenchle/sources/frenchle.tex
+%doc %{_texmfdistdir}/doc/latex/frenchle/sources/myfroptn.sty
+%doc %{_texmfdistdir}/doc/latex/frenchle/sources/mymaj.sty
 
 #-----------------------------------------------------------------------
 %prep
@@ -57,21 +63,3 @@ multilingual document.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Tue Jan 31 2012 Paulo Andrade <pcpa@mandriva.com.br> 5.9995-1
-+ Revision: 770177
-- Update to latest upstream package
-
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 5.9993-2
-+ Revision: 752097
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 5.9993-1
-+ Revision: 718508
-- texlive-frenchle
-- texlive-frenchle
-- texlive-frenchle
-- texlive-frenchle
-
