@@ -6,7 +6,7 @@
 # catalog-version 5.9995
 Name:		texlive-frenchle
 Version:	5.9995
-Release:	5
+Release:	6
 Summary:	French macros, usable stand-alone or with Babel
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/language/french/frenchle
