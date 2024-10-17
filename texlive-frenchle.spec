@@ -9,7 +9,7 @@ Version:	5.9995
 Release:	12
 Summary:	French macros, usable stand-alone or with Babel
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/language/french/frenchle
+URL:		https://www.ctan.org/tex-archive/language/french/frenchle
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/frenchle.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/frenchle.doc.tar.xz
